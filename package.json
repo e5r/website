@@ -1,0 +1,14 @@
+{
+    "name": "e5r-website",
+    "version": "1.0.0",
+    "description": "E5R Development Team web site",
+    "author": "E5R Development Team",
+    "license": "Apache-2.0",
+    "readme": "README.rst",
+    "devDependencies": {
+        "gulp": "~3.9.1",
+        "gulp-util": "~3.0.7",
+        "require-dir": "~0.3.0",
+        "run-sequence": "~1.2.1"
+    }
+}

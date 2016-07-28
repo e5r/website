@@ -1,0 +1,11 @@
+# Temp files
+build/
+dist/
+node_modules/
+
+# Extra Package Manager
+#bower_components/
+#packages/
+
+*.log
+*.tmp
