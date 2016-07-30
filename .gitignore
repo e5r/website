@@ -9,3 +9,8 @@ node_modules/
 
 *.log
 *.tmp
+*.js.map
+
+# Project build files
+src/e5r.website.web/**/*.js
+
