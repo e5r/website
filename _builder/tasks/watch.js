@@ -12,10 +12,12 @@ var gulp = require('gulp'),
         { glob: 'src/**/*.ts', tasks: ['tsc'] }
     ];
 
-gulp.task('watch', [], function () {
+gulp.task('watch', ['build'], function () {
     for (var p in pairs) {
         var pair = pairs[p];
-        gulp.watch(pair.glob, pair.tasks);
+        gulp.watch(pair.glob, function (event) {
+            gulp.start(pair.tasks);
+        });
         log('Watching "' + pair.glob + '"...');
     }
 });

@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
     log = gutil.log,
     tasks = [
-        /** @todo: Add build tasks here! */
+        'tsc'
     ];
 
 gulp.task('build', [], function () {
