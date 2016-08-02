@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 
     log = gutil.log,
     tasks = [
+        'typings:clean',
         'tsc:clean',
         'jslib:clean'
     ];
