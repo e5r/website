@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>E5R Development Team</title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="images/favicon.png">
-    </head>
-    <body>
-        <application>
-            <span class="applicationload">Loading...</span>
-        </application>
-    </body>
+
+<head>
+    <title>E5R Development Team</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- node_modules/systemjs/dist -->
+    <script src="lib/system.src.js"></script>
+
+    <script src="config/systemjs.config.js"></script>
+</head>
+
+<body>
+    <application>
+        <span class="applicationload">Loading...</span>
+    </application>
+    <script>
+        System.import('app').catch(function(error){console.error(error);});
+    </script>
+</body>
+
 </html>

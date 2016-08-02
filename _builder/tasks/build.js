@@ -8,7 +8,9 @@ var gulp = require('gulp'),
 
     log = gutil.log,
     tasks = [
-        'tsc'
+        'clean',
+        'tsc',
+        'jslib'
     ];
 
 gulp.task('build', [], function () {
