@@ -6,7 +6,13 @@
     "license": "Apache-2.0",
     "readme": "README.rst",
     "dependencies": {
-        "systemjs": "0.19.36"
+        "systemjs": "0.19.36",
+        "core-js": "2.4.1",
+
+        "@angular/core": "2.0.0-rc.4",
+        "@angular/common": "2.0.0-rc.4",
+        "@angular/compiler": "2.0.0-rc.4",
+        "@angular/platform-browser-dynamic": "2.0.0-rc.4"
     },
     "devDependencies": {
         "require-dir": "~0.3.0",
