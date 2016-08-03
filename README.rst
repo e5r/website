@@ -22,3 +22,5 @@ Develop command
 .. code-block:: shell
 
     $ sh builder develop
+
+Launch http://localhost:5000
