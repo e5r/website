@@ -8,8 +8,9 @@ var gulp = require('gulp'),
     run = require('run-sequence'),
 
     tasks = [
-        'watch',
-        'dev-server'
+        'build',
+        'dev-server',
+        'watch'
     ];
 
 gulp.task('develop', [], function () {
