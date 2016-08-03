@@ -15,6 +15,6 @@ var gulp = require('gulp'),
 
 gulp.task('default', [], function () {
     log('~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* E5R BUILDER STARTED *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~');
-    run(tasks);
+    run.apply(run, tasks);
     log('~*~*~*~*~*~*~*~*~*~*~*~*~*~*~* E5R BUILDER FINISHED *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~');
 });

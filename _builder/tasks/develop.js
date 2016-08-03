@@ -14,6 +14,6 @@ var gulp = require('gulp'),
 
 gulp.task('develop', [], function () {
     if (0 < tasks.length) {
-        run(tasks);
+        run.apply(run, tasks);
     }
 });
