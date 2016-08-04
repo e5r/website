@@ -33,6 +33,7 @@
         "gulp-util": "~3.0.7",
         "gulp-typescript": "~2.13.6",
         "gulp-sourcemaps": "~1.6.0",
-        "gulp-shell": "0.5.2"
+        "gulp-shell": "0.5.2",
+        "gulp-sass": "2.3.2"
     }
 }

@@ -10,10 +10,11 @@ var gulp = require('gulp'),
     tasks = [
         'typings:clean',
         'tsc:clean',
+        'sass:clean',
         'jslib:clean'
     ];
 
-gulp.task('clean', [], function () {
+gulp.task('clean', [], function() {
     if (0 < tasks.length) {
         run.apply(run, tasks);
     }

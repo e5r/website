@@ -1,13 +1,13 @@
 // Copyright (c) E5R Development Team. All rights reserved.
-// Licensed under the Apache License, Version 2.0.
-// More license information in https://github.com/e5r/licenses/blob/master/notices/empty-project.rst.
+// Licensed under the Apache License, Version 2.0. More license information in LICENSE.txt.
 
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
 
     log = gutil.log,
     pairs = [
-        { glob: 'src/**/*.ts', tasks: ['tsc'] }
+        { glob: 'src/**/*.ts', tasks: ['tsc'] },
+        { glob: 'src/**/*.scss', tasks: ['sass'] }
     ];
 
 gulp.task('watch', [], function () {

@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     tasks = [
         'typings',
         'tsc',
+        'sass',
         'jslib'
     ];
 

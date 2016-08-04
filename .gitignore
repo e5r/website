@@ -14,4 +14,5 @@ typings/
 
 # Project build files
 src/e5r.website.web/**/*.js
+src/e5r.website.web/**/*.css
 
