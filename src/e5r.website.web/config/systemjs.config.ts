@@ -3,20 +3,25 @@
 
 var System: any
 
-let _map: Object = {
+let systemjsMap: Object = {
     'app': 'app',
     '@angular': 'lib/angular',
     'rxjs': 'lib/rxjs'
 }
 
-let _pkg: Object = {
-    'app': { main: 'main.js', defaultExtension: 'js' },
-    'rxjs': { /*main:'Rx.umd.js',*/ defaultExtension: 'js' }
+let systemjsPkg: Object = {
+    'app': {
+        main: 'main.js',
+        defaultExtension: 'js'
+    },
+    'rxjs': {
+        defaultExtension: 'js'
+    }
 }
 
 // Angular packages
 
-let _ngPkg: Array<string> = [
+let systemjsNgModules: Array<string> = [
     'common',
     'compiler',
     'core',
@@ -24,13 +29,14 @@ let _ngPkg: Array<string> = [
     'platform-browser-dynamic'
 ];
 
-_ngPkg.map((pkg) => {
-    _pkg['@angular/' + pkg] = {
-        main: pkg + '.umd.js', defaultExtension: 'js'
+systemjsNgModules.map((ngModule) => {
+    systemjsPkg['@angular/' + ngModule] = {
+        main: ngModule + '.umd.js',
+        defaultExtension: 'js'
     }
 });
 
 System.config({
-    map: _map,
-    packages: _pkg
+    map: systemjsMap,
+    packages: systemjsPkg
 })
