@@ -7,4 +7,5 @@ import {bootstrap} from '@angular/platform-browser-dynamic';
 
 import {ApplicationComponent} from './application/application.component';
 
-bootstrap(ApplicationComponent);
+bootstrap(ApplicationComponent)
+.catch(error => console.error('#ApplicationError:', error));
