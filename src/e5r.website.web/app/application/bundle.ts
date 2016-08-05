@@ -3,10 +3,5 @@
 
 /// <reference path="../../../../typings/index.d.ts" />
 
-import {Component} from '@angular/core';
-
-@Component({
-    selector: 'application',
-    template: '<router-outlet></router-outlet>'
-})
-export class ApplicationComponent { }
+export {ApplicationComponent} from './application.component.ts';
+export {applicationRouterProvider} from './application.routes.ts';

@@ -6,7 +6,9 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'application',
-    template: '<router-outlet></router-outlet>'
+    selector: 'home-page',
+    template: `
+    <h1>Welcome to E5R Development Team web site!</h1>
+    `
 })
-export class ApplicationComponent { }
+export class HomePageComponent { }

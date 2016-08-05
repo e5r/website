@@ -5,7 +5,8 @@
 
 import {bootstrap} from '@angular/platform-browser-dynamic';
 
-import {ApplicationComponent} from './application/application.component';
+import {ApplicationComponent, applicationRouterProvider} from './application/bundle';
 
-bootstrap(ApplicationComponent)
-.catch(error => console.error('#ApplicationError:', error));
+bootstrap(ApplicationComponent, [
+    applicationRouterProvider
+]).catch(error => console.error('#ApplicationError:', error));

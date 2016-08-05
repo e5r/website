@@ -6,7 +6,9 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'application',
-    template: '<router-outlet></router-outlet>'
+    selector: '404-page',
+    template: `
+    <h1>404 - Page Not Found!</h1>
+    `
 })
-export class ApplicationComponent { }
+export class NotFoundPageComponent { }
