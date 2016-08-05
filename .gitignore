@@ -3,6 +3,7 @@ build/
 dist/
 node_modules/
 typings/
+.vscode/
 
 # Extra Package Manager
 #bower_components/
