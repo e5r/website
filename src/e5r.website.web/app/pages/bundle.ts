@@ -5,3 +5,4 @@
 
 export {HomePageComponent} from './home-page.component';
 export {NotFoundPageComponent} from './not-found-page.component';
+export {TestPageComponent} from './test-page.component';

@@ -14,7 +14,7 @@ var tsconfigData = JSON.parse(fs.readFileSync('tsconfig.json')),
     destPath = (((tsconfigData || {}).compilerOptions || {}).rootDir) || 'src',
     sourceMap = !!((((tsconfigData || {}).compilerOptions || {}).sourceMap) || false)
 
-gulp.task('tsc', [], function () {
+gulp.task('tsc', ['tsc:clean'], function() {
     var tsResult = tsconfig.src();
 
     if (sourceMap) {
@@ -30,9 +30,10 @@ gulp.task('tsc', [], function () {
     return tsResult.pipe(gulp.dest(destPath));
 });
 
-gulp.task('tsc:clean', [], function () {
+gulp.task('tsc:clean', [], function() {
     return del([
         destPath + '/**/*.js',
         destPath + '/**/*.js.map',
+        '!' + destPath + '/lib/**/*'
     ]);
 });

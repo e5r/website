@@ -4,11 +4,28 @@
 /// <reference path="../../../../typings/index.d.ts" />
 
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'home-page',
     template: `
     <h1>Welcome to E5R Development Team web site!</h1>
+    <nav>
+        <button (click)="goTest()">Go to Test Page</button>
+        <button (click)="go404()">Go to 404 Not Found Page!</button>
+    </nav>
     `
 })
-export class HomePageComponent { }
+export class HomePageComponent {
+    constructor(private router: Router) { }
+
+    goTest() {
+        console.log('goTest()');
+        this.router.navigate(['/test']);
+    }
+
+    go404() {
+        console.log('go404()');
+        this.router.navigate(['/page-not-found']);
+    }
+}

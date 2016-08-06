@@ -16,22 +16,23 @@ var gulp = require('gulp'),
         },
         {
             globs: 'node_modules/reflect-metadata/*.{js,js.map}',
-            dest: 'reflect-metadata' 
+            dest: 'reflect-metadata'
         },
         {
             globs: 'node_modules/zone.js/dist/zone.{js,min.js}',
-            dest: 'zone.js' 
+            dest: 'zone.js'
         }
     ],
     destBase = 'src/e5r.website.web/lib/';
 
-// Angular libs
+// Angular modules
 [
     'common',
     'compiler',
     'core',
     'platform-browser',
-    'platform-browser-dynamic'
+    'platform-browser-dynamic',
+    'router'
 ].map(function (m) {
     src.push({
         globs: 'node_modules/@angular/' + m + '/bundles/*.umd.{js,min.js}',
@@ -39,7 +40,7 @@ var gulp = require('gulp'),
     });
 });
 
-// Rxjs libs
+// Rxjs modules
 [
     'add',
     'observable',

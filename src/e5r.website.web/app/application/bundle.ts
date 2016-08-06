@@ -3,5 +3,5 @@
 
 /// <reference path="../../../../typings/index.d.ts" />
 
-export {ApplicationComponent} from './application.component.ts';
-export {applicationRouterProvider} from './application.routes.ts';
+export {ApplicationComponent} from './application.component';
+export {applicationRouterProvider} from './application.routes';

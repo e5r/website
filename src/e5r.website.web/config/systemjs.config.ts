@@ -19,14 +19,14 @@ let systemjsPkg: Object = {
     }
 }
 
-// Angular packages
-
+// Angular modules
 let systemjsNgModules: Array<string> = [
     'common',
     'compiler',
     'core',
     'platform-browser',
-    'platform-browser-dynamic'
+    'platform-browser-dynamic',
+    'router'
 ];
 
 systemjsNgModules.map((ngModule) => {

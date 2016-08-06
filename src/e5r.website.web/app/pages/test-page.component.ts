@@ -7,15 +7,15 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
-    selector: 'not-found-page',
+    selector: 'test-page',
     template: `
-    <h1>404 - Page Not Found!</h1>
+    <h1>Test!</h1>
     <nav>
         <button (click)="goHome()">Go to Home!</button>
     </nav>
     `
 })
-export class NotFoundPageComponent {
+export class TestPageComponent {
     constructor(private router: Router) { }
 
     goHome() {

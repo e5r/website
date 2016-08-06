@@ -20,9 +20,9 @@ gulp.task('dev-server', [], function () {
 });
 
 gulp.task('dev-server:localhost', shell.task([
-    path.resolve('./node_modules/.bin/static') + ' ' + root + ' -p ' + port
+    path.resolve('./node_modules/.bin/static') + ' ' + root + ' -c no-cache -p ' + port
 ]));
 
 gulp.task('dev-server:localnetwork', shell.task([
-    path.resolve('./node_modules/.bin/static') + ' ' + root + ' -a 0.0.0.0 -p ' + port
+    path.resolve('./node_modules/.bin/static') + ' ' + root + ' -c no-cache -a 0.0.0.0 -p ' + port
 ]));

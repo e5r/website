@@ -5,9 +5,11 @@
 
 import {provideRouter, RouterConfig} from '@angular/router';
 
-import {HomePageComponent, NotFoundPageComponent} from '../pages/bundle';
+import {HomePageComponent, NotFoundPageComponent, TestPageComponent} from '../pages/bundle';
 
 const routes: RouterConfig = [
+    { path: '', component: HomePageComponent },
+    { path: 'test', component: TestPageComponent },
     { path: '**', component: NotFoundPageComponent }
 ];
 
