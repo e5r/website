@@ -4,4 +4,4 @@
 /// <reference path="../../../../typings/index.d.ts" />
 
 export {ApplicationComponent} from './application.component';
-export {applicationRouterProvider} from './application.routes';
+export {applicationRouterProvider, applicationBaseHrefProvider} from './application.routes';

@@ -4,11 +4,13 @@
 /// <reference path="../../../../typings/index.d.ts" />
 
 import {provideRouter, RouterConfig} from '@angular/router';
+import {APP_BASE_HREF} from '@angular/common';
 
 import {HomePageComponent, NotFoundPageComponent, TestPageComponent} from '../pages/bundle';
 
 const routes: RouterConfig = [
-    { path: '', component: HomePageComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomePageComponent },
     { path: 'test', component: TestPageComponent },
     { path: '**', component: NotFoundPageComponent }
 ];
@@ -16,3 +18,7 @@ const routes: RouterConfig = [
 export const applicationRouterProvider = [
     provideRouter(routes)
 ];
+
+export const applicationBaseHrefProvider = {
+    provide: APP_BASE_HREF, useValue: '/'
+};
