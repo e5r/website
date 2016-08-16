@@ -3,6 +3,8 @@
 
 /// <reference path="../../../../typings/index.d.ts" />
 
+/** @todo: Remove bundle.ts */
+
 export {HomePageComponent} from './home-page.component';
 export {NotFoundPageComponent} from './not-found-page.component';
 export {TestPageComponent} from './test-page.component';

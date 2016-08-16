@@ -3,5 +3,7 @@
 
 /// <reference path="../../../../typings/index.d.ts" />
 
+/** @todo: Remove bundle.ts */
+
 export {ApplicationComponent} from './application.component';
-export {applicationRouterProvider, applicationBaseHrefProvider} from './application.routes';
+export {applicationRouterProvider, routing} from './application.routes';

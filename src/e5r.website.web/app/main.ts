@@ -3,13 +3,8 @@
 
 /// <reference path="../../../typings/index.d.ts" />
 
-import {ROUTER_DIRECTIVES} from '@angular/router';
-import {bootstrap} from '@angular/platform-browser-dynamic';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-import {ApplicationComponent, applicationRouterProvider, applicationBaseHrefProvider} from './application/bundle';
+import {MyApplicationModule} from './application/application.module';
 
-bootstrap(ApplicationComponent, [
-    ROUTER_DIRECTIVES,
-    applicationRouterProvider,
-    applicationBaseHrefProvider
-]).catch(error => console.error('#ApplicationError:', error));
+platformBrowserDynamic().bootstrapModule(MyApplicationModule);
