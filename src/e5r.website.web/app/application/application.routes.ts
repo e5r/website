@@ -5,12 +5,11 @@
 
 import {Routes, RouterModule} from '@angular/router';
 
-import {HomePageComponent, NotFoundPageComponent, TestPageComponent} from '../pages/bundle';
+import {HomePageComponent} from '../pages/home-page.component';
+import {NotFoundPageComponent} from '../pages/not-found-page.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: HomePageComponent },
-    { path: 'test', component: TestPageComponent },
+    { path: '', component: HomePageComponent },
     { path: '**', component: NotFoundPageComponent }
 ];
 

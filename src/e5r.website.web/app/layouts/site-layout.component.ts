@@ -3,8 +3,10 @@
 
 /// <reference path="../../../../typings/index.d.ts" />
 
-/** @todo: Remove bundle.ts */
+import {Component} from '@angular/core';
 
-export {HomePageComponent} from './home-page.component';
-export {NotFoundPageComponent} from './not-found-page.component';
-export {TestPageComponent} from './test-page.component';
+@Component({
+    selector: 'site-layout',
+    templateUrl: 'templates/layouts/site-layout.html'
+})
+export class SiteLayoutComponent { }

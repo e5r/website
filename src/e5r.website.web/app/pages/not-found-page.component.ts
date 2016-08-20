@@ -4,22 +4,9 @@
 /// <reference path="../../../../typings/index.d.ts" />
 
 import {Component} from '@angular/core';
-import {Router} from '@angular/router';
 
 @Component({
     selector: 'not-found-page',
-    template: `
-    <h1>404 - Page Not Found!</h1>
-    <nav>
-        <button (click)="goHome()">Go to Home!</button>
-    </nav>
-    `
+    templateUrl: 'templates/errors/404-not-found-page.html'
 })
-export class NotFoundPageComponent {
-    constructor(private router: Router) { }
-
-    goHome() {
-        console.log('goHome()');
-        this.router.navigate(['/']);
-    }
-}
+export class NotFoundPageComponent { }

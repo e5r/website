@@ -7,8 +7,11 @@ import {NgModule} from '@angular/core';
 import {APP_BASE_HREF} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {routing, ApplicationComponent, applicationRouterProvider}  from './bundle';
-import {HomePageComponent, NotFoundPageComponent, TestPageComponent} from '../pages/bundle';
+import {ApplicationComponent}  from './application.component';
+import {routing, applicationRouterProvider}  from './application.routes';
+import {HomePageComponent} from '../pages/home-page.component';
+import {NotFoundPageComponent} from '../pages/not-found-page.component';
+import {SiteLayoutComponent} from '../layouts/site-layout.component';
 
 @NgModule({
     imports: [
@@ -16,10 +19,15 @@ import {HomePageComponent, NotFoundPageComponent, TestPageComponent} from '../pa
         routing
     ],
     declarations: [
+        // Core application components
         ApplicationComponent,
+
+        // Master layout components
+        SiteLayoutComponent,
+
+        // Page components
         HomePageComponent,
-        NotFoundPageComponent,
-        TestPageComponent
+        NotFoundPageComponent
     ],
     providers: [
         applicationRouterProvider,
