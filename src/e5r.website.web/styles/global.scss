@@ -27,3 +27,13 @@ body {
         display: none;
     }
 }
+
+// Page footer
+.layout-page-footer {
+  margin-top:20px;
+  text-align: center;
+  border-top: 1px solid $color-palette-b;
+}
+.layout-page-footer p:last-child {
+  margin-bottom: 0;
+}

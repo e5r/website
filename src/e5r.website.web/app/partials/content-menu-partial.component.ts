@@ -8,7 +8,7 @@ import {Component} from '@angular/core';
 import {APP_PREFIX} from '../application/application.utils';
 
 @Component({
-    selector: APP_PREFIX + 'site-layout',
-    templateUrl: 'templates/layouts/site-layout.html'
+    selector: APP_PREFIX + 'content-menu-partial',
+    templateUrl: 'templates/partials/content-menu-partial.html'
 })
-export class SiteLayoutComponent { }
+export class ContentMenuPartialComponent { }

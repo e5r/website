@@ -5,8 +5,10 @@
 
 import {Component} from '@angular/core';
 
+import {APP_PREFIX} from '../application/application.utils';
+
 @Component({
-    selector: 'not-found-page',
+    selector: APP_PREFIX + 'not-found-page',
     templateUrl: 'templates/errors/404-not-found-page.html'
 })
 export class NotFoundPageComponent { }

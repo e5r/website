@@ -7,6 +7,10 @@ var gulp = require('gulp'),
 
     src = [
         {
+            globs: 'node_modules/core-js/client/shim.{js,min.js,js.map}',
+            dest: 'core-js'
+        },
+        {
             globs: 'node_modules/systemjs/dist/system.{js,src.js,js.map}',
             dest: 'systemjs'
         },
@@ -21,6 +25,22 @@ var gulp = require('gulp'),
         {
             globs: 'node_modules/zone.js/dist/zone.{js,min.js}',
             dest: 'zone.js'
+        },
+        {
+            globs: 'node_modules/bootstrap/dist/**/bootstrap.{css,min.css,js,min.js}',
+            dest: 'bootstrap'
+        },
+        {
+            globs: 'node_modules/jquery/dist/jquery.{js,min.js,min.map}',
+            dest: 'bootstrap/requirements/js'
+        },
+        {
+            globs: 'node_modules/tether/dist/**/tether*.{js,css}',
+            dest: 'bootstrap/requirements'
+        },
+        {
+            globs: 'node_modules/normalize.css/normalize.css',
+            dest: 'bootstrap/requirements/css'
         }
     ],
     destBase = 'src/e5r.website.web/lib/';

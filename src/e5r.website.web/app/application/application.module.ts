@@ -7,11 +7,19 @@ import {NgModule} from '@angular/core';
 import {APP_BASE_HREF} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 
+/** @todo: Create ApplicationCoreModule */
 import {ApplicationComponent}  from './application.component';
 import {routing, applicationRouterProvider}  from './application.routes';
+
+/** @todo: Create ApplicationLayoutModule */
+import {SiteLayoutComponent} from '../layouts/site-layout.component';
+import {MainMenuPartialComponent} from '../partials/main-menu-partial.component';
+import {FooterPartialComponent} from '../partials/footer-partial.component';
+import {ContentMenuPartialComponent} from '../partials/content-menu-partial.component';
+
+/** @todo: Create ApplicationPagesModule */
 import {HomePageComponent} from '../pages/home-page.component';
 import {NotFoundPageComponent} from '../pages/not-found-page.component';
-import {SiteLayoutComponent} from '../layouts/site-layout.component';
 
 @NgModule({
     imports: [
@@ -24,6 +32,9 @@ import {SiteLayoutComponent} from '../layouts/site-layout.component';
 
         // Master layout components
         SiteLayoutComponent,
+        MainMenuPartialComponent,
+        FooterPartialComponent,
+        ContentMenuPartialComponent,
 
         // Page components
         HomePageComponent,

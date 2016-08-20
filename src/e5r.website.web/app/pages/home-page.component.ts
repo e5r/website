@@ -5,8 +5,10 @@
 
 import {Component} from '@angular/core';
 
+import {APP_PREFIX} from '../application/application.utils';
+
 @Component({
-    selector: 'home-page',
+    selector: APP_PREFIX + 'home-page',
     templateUrl: 'templates/pages/home-page.html'
 })
 export class HomePageComponent { }

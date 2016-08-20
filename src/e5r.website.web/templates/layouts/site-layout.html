@@ -1,1 +1,24 @@
-<ng-content></ng-content>
+<div class="container-fluid">
+    <!--Main menu-->
+    <div class="row">
+        <app-main-menu-partial></app-main-menu-partial>
+    </div>
+
+    <!--Middle-->
+    <div class="row">
+        <!--Content menu-->
+        <div class="col-sm-3">
+            <app-content-menu-partial></app-content-menu-partial>
+        </div>
+
+        <!--Page content-->
+        <div class="col-sm-9">
+            <ng-content></ng-content>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="row">
+        <app-footer-partial></app-footer-partial>
+    </div>
+</div>
