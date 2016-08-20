@@ -14,7 +14,7 @@ var tsconfigData = JSON.parse(fs.readFileSync('tsconfig.json')),
     destPath = (((tsconfigData || {}).compilerOptions || {}).rootDir) || 'src',
     sourceMap = !!((((tsconfigData || {}).compilerOptions || {}).sourceMap) || false)
 
-gulp.task('tsc', ['tsc:clean'], function() {
+gulp.task('tsc', [], function() {
     var tsResult = tsconfig.src();
 
     if (sourceMap) {
