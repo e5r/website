@@ -5,20 +5,18 @@
     </div>
 
     <!--Middle-->
-    <div class="row">
+    <div class="row layout-page-middle">
         <!--Content menu-->
-        <div class="col-sm-3">
+        <div class="col-sm-3" *ngIf="showContentMenu">
             <app-content-menu-partial></app-content-menu-partial>
         </div>
 
         <!--Page content-->
-        <div class="col-sm-9">
+        <div [class]="showContentMenu ? 'col-sm-9' : 'col-sm-12'">
             <ng-content></ng-content>
         </div>
     </div>
 
     <!--Footer-->
-    <div class="row">
-        <app-footer-partial></app-footer-partial>
-    </div>
+    <app-footer-partial></app-footer-partial>
 </div>

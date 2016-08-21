@@ -3,7 +3,7 @@
 
 /// <reference path="../../../../typings/index.d.ts" />
 
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 import {APP_PREFIX} from '../application/application.utils';
 
@@ -11,4 +11,6 @@ import {APP_PREFIX} from '../application/application.utils';
     selector: APP_PREFIX + 'site-layout',
     templateUrl: 'templates/layouts/site-layout.html'
 })
-export class SiteLayoutComponent { }
+export class SiteLayoutComponent {
+    @Input('show-menu') showContentMenu: boolean = true;
+}

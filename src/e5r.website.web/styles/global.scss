@@ -23,17 +23,24 @@ body {
     margin-top: -100px;
     background-image: url('../images/loading_9.gif');
     background-position: center;
+    
     span {
         display: none;
     }
 }
 
+// Page middle
+.layout-page-middle {
+    margin-bottom:120px;
+}
+
 // Page footer
 .layout-page-footer {
-  margin-top:20px;
-  text-align: center;
-  border-top: 1px solid $color-palette-b;
-}
-.layout-page-footer p:last-child {
-  margin-bottom: 0;
+    margin-top:20px;
+    text-align: center;
+    border-top: 1px solid $color-palette-b;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
