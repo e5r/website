@@ -2,6 +2,9 @@
 e5r-website
 ===========
 
+.. image:: https://travis-ci.org/e5r/website.svg?branch=develop
+    :target: https://travis-ci.org/e5r/website
+
 E5R Development Team web site
 
 Prerequisites
