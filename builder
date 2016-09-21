@@ -4,6 +4,11 @@
 # Licensed under the Apache License, Version 2.0.
 # More license information in https://github.com/e5r/licenses/blob/master/notices/empty-project.rst.
 
+readlink --help
+basename --help
+uname --help
+uname
+
 SH_PROGRAM=`basename $SHELL`
 SH_SCRIPTFILE=`readlink -f ${0}`
 SH_SCRIPTDIR=`dirname $SH_SCRIPTFILE`
