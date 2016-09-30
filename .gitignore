@@ -5,6 +5,8 @@ node_modules/
 typings/
 .vscode/
 
+.DS_Store
+
 # Extra Package Manager
 #bower_components/
 #packages/

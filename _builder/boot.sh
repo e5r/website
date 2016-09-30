@@ -4,10 +4,7 @@
 # Licensed under the Apache License, Version 2.0.
 # More license information in https://github.com/e5r/licenses/blob/master/notices/empty-project.rst.
 
-BOOT_SCRIPTFILE=`readlink -f ${0}`
-BOOT_SCRIPTDIR=`dirname $BOOT_SCRIPTFILE`
-BOOT_PARENTDIR=`dirname $BOOT_SCRIPTDIR`
-BOOT_CHECK="$BOOT_SCRIPTDIR/check.sh"
+BOOT_CHECK="./check.sh"
 BOOT_NODEMINVERSION=5
 BOOT_NPMMINVERSION=3
 

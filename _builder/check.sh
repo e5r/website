@@ -4,12 +4,9 @@
 # Licensed under the Apache License, Version 2.0.
 # More license information in https://github.com/e5r/licenses/blob/master/notices/empty-project.rst.
 
-CHECK_SCRIPTFILE=`readlink -f ${0}`
-CHECK_SCRIPTDIR=`dirname $CHECK_SCRIPTFILE`
-CHECK_PARENTDIR=`dirname $CHECK_SCRIPTDIR`
-CHECK_NODEMODULES="$CHECK_PARENTDIR/node_modules"
-CHECK_ROOTPACKAGE="$CHECK_PARENTDIR/package.json"
-CHECK_ROOTGULPFILE="$CHECK_PARENTDIR/gulpfile.js"
+CHECK_NODEMODULES="./node_modules"
+CHECK_ROOTPACKAGE="./package.json"
+CHECK_ROOTGULPFILE="./gulpfile.js"
 
 if [ ! -f "$CHECK_ROOTPACKAGE" ]; then
     echo \#WARNING: Root file "package.json" not found.
@@ -39,4 +36,3 @@ fi
 if [ ! -d "$CHECK_NODEMODULES/.bin" ]; then
    exit 1
 fi
-
